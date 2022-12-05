@@ -1,0 +1,35 @@
+body {
+		    background-image: url("welcometrivia.jpeg");
+		    background-size: 1550px 700px;
+}
+.button{
+	margin-top :290px;
+	margin-bottom: 50px;
+	margin-left: 250px;
+	margin-right: 0px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 20px;
+}
+.a,.b,.c {
+  align-items: center;
+  background-image: linear-gradient(144deg,#FF1493, #5B42F3 50%,#C71585);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px 2px #FF1493 ;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 70%;
+  min-width: 80px;
+  padding: 19px 24px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}

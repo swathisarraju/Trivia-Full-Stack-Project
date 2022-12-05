@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+body {
+    height: 100%;
+    background-image: url(https://www.pixelstalk.net/wp-content/uploads/2016/05/Nebula-space-hd-wallpapers-1920x1200.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+/* Font */
+label,p,a,button,select,input,span {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+/* Flex Styles - Start */
+.d-flex { display: -webkit-box; display: -ms-flexbox; display: flex; }
+.justify-center { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+.justify-start { -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; }
+.justify-end { -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
+.justify-around { -ms-flex-pack: distribute; justify-content: space-around; }
+.justify-between { -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+.justify-evenly { -webkit-box-pack: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; }
+.align-center { -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.align-start { -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
+.flex-row { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; }
+.flex-col { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+.flex-wrap { -ms-flex-wrap: wrap; flex-wrap: wrap; }
+.w-100 { width: 100%; }
+/* Flex Styles - End */
+
+/* Title - Start */
+.title {
+    width: 100%;
+    height: 180px;
+    background-image: url(https://i.ibb.co/vLdVNHy/gradient.png);
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-position: center center;
+    border-radius: 15px 15px 0 0;
+    margin-bottom: 25px;
+    border: 3px solid black;
+}
+.invalid{
+    font-family: 'Poppins', sans-serif;
+    color: red;
+    align-text: center;
+    font-size: 300%;
+}
+legend {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 3.2em;
+    letter-spacing: .5px;
+    /* color: white; */
+    -webkit-text-stroke: 1.5px black;
+}
+
+legend > span:nth-child(1) { color: #ffbfcd; }
+legend > span:nth-child(2) { color: #A2DEFD; }
+legend > span:nth-child(3) { color: #FCE3A0; }
+legend > span:nth-child(4) { color: #8ea3e2; }
+legend > span:nth-child(5) { color: #ffbfcd; }
+/* Title - End */
+
+/* Main Container - Start */
+main {
+    width: 100vw;
+}
+
+.parallax {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-height: 100%;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-perspective: 1px;
+    perspective: 1px;
+}
+
+.stars {
+    z-index: -1;
+    position: absolute;
+    top: 6em;
+    left: 0;
+    width: 100vw;
+    -webkit-transform: translateZ(-1px) scale(1.9);
+            transform: translateZ(-1px) scale(1.9);
+}
+
+.container {
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 15px;
+    border: 3px solid black;
+    margin: 32em 1em 10em 2em;
+}
+
+.container::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 15px;
+    left: -20px;
+    height: 100%;
+    width: 100%;
+    background: -webkit-gradient(linear, left top, right top, from(#F2EFFE), to(#FEEDEB));
+    background: -o-linear-gradient(left, #F2EFFE, #FEEDEB);
+    background: linear-gradient(to right, #F2EFFE, #FEEDEB);
+    border-radius: 15px;
+    border: 3px solid black;
+}
+
+#signUp {
+    width: 100%;
+    padding: 40px;
+}
+/* Main Container - End */
+
+/* Form Inputs - Start */
+.input-box{
+    margin-bottom: 17px;
+    border: 3px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.input-box > label {
+    width: 65px;
+    height: 55px;
+    background-color: #FFF9DF;
+    border-right: 3px solid black;
+}
+
+.input-box > label > img {
+    max-height: 30px;
+    max-width: 30px;
+}
+
+.input-style {
+    border: none;
+    font-size: 16px;
+    padding: 15px;
+}
+
+select {
+    /* for Firefox */
+    -moz-appearance: none;
+    /* for Safari, Chrome, Opera */
+    -webkit-appearance: none;
+}
+
+/* for IE10 */
+select::-ms-expand {
+    display: none;
+}
+/* Form Inputs - Start */
+
+/* Login and Submit - Start */
+.bottom button {
+    padding: 10px 33px 8px;
+    border: 3px solid black;
+    border-radius: 100px;
+    background-color: #A2DEFD;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    color: black;
+}
+
+.bottom .signup {
+    color: #E6889D;
+    text-decoration: none;
+    border-bottom: 3px solid black;
+}
+/* Login and Submit - End */
