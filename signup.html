@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang = "en">
+<title>signup</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<main>
+<!-- Main Container -->
+<div class="d-flex w-100 justify-center align-center parallax">
+<img src="https://i.ibb.co/9sM2rkV/stars-parallax.png" class="stars" alt="stars parallax">
+<div class="container d-flex flex-col justify-center align-center">
+
+<form action="/signupSubmit" method="get" id="signUp">
+   
+<fieldset class="form d-flex flex-col align-start">
+<!-- Title -->
+<div class="title d-flex align-center justify-center">
+<legend><span>s</span><span>i</span><span>g</span><span>n</span> <span>u</span><span>p</span></legend>
+</div>
+            <!--Name -->
+<div class="input-box w-100 d-flex">
+<label for="firstName" class="d-flex align-center justify-center">
+<img src="https://i.ibb.co/1LQdnLC/id.png" alt="firstName">
+</label>
+<input class="input-style w-100" type="text" id="firstName" placeholder="Name" name = "name" required>
+</div>
+<!-- Username-->
+<div class="input-box w-100 d-flex">
+<label for="email" class="d-flex align-center justify-center">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRehl7Af9HskCh-Rn3XcasX4T_SjRQURseg_tTQQC0hlK7E-5pGFV7uI4CkEjj0dg4mr3M&usqp=CAU" alt="mail">
+</label>
+<input class="input-style w-100" id="username" type="username" placeholder="Username" name = "username" required>
+</div>
+<!-- Password -->
+<div class="input-box w-100 d-flex">
+<label for="password" class="d-flex align-center justify-center">
+<img src="https://i.ibb.co/sJR25cg/key.png" alt="password">
+</label>
+<input class="input-style w-100" type="password" id="password" placeholder="Password" name = "password" required>
+</div>
+
+   <!-- Login Link and Submit -->
+<div class="d-flex justify-between align-center w-100 bottom">
+<div><span>Already a user?</span><a href="login1" class="login">Login</a></div>
+<button type="submit" form="signUp" value="Submit">Submit</button>
+</div>
+</fieldset>
+</form>
+</div>
+</div>
+</main>
+</html>
