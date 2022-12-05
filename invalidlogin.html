@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<title>Login</title>
+    <link rel="stylesheet" href="login1.css">
+</head>
+<main>
+<center>
+<h1 class = "invalid"> Invalid Login!!!</h1>
+</center>
+<!-- Main Container -->
+<div class="d-flex w-100 justify-center align-center parallax">
+<img src="https://i.ibb.co/9sM2rkV/stars-parallax.png" class="stars" alt="stars parallax">
+<div class="container d-flex flex-col justify-center align-center">
+
+<form method="get" action="/loginSubmit" id="login">
+<fieldset class="form d-flex flex-col align-start">
+
+<!-- Title -->
+
+<div class="title d-flex align-center justify-center">
+<legend><span>L</span><span>o</span><span>g</span><span>i</span><span>n</span></legend>
+</div>
+
+<!-- Username-->
+<div class="input-box w-100 d-flex">
+<label for="email" class="d-flex align-center justify-center">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRehl7Af9HskCh-Rn3XcasX4T_SjRQURseg_tTQQC0hlK7E-5pGFV7uI4CkEjj0dg4mr3M&usqp=CAU" alt="mail">
+</label>
+<input class="input-style w-100" id="username" type="text" placeholder="Username" name = "username" required>
+</div>
+<!-- Password -->
+<div class="input-box w-100 d-flex">
+<label for="password" class="d-flex align-center justify-center">
+<img src="https://i.ibb.co/sJR25cg/key.png" alt="password">
+</label>
+<input class="input-style w-100" type="password" id="password" placeholder="Password" name = "password" required>
+</div>
+
+   <!-- Login Link and Submit -->
+<div class="d-flex justify-between align-center w-100 bottom">
+<div><span>Don't have an account?</span><a href="signup1" class="signup">Sign up</a></div>
+<button type="submit" form="login" value="Submit">Submit</button>
+</div>
+</fieldset>
+</form>
+</div>
+</div>
+</main>
+</html>
